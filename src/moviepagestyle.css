@@ -1,0 +1,61 @@
+.poster {
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: 390px 600px;
+}
+.poster li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 25px;
+    margin-bottom: 20px;
+}
+.desc_list h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+.desc_list h3{
+    margin-bottom: 20px;
+    font-size: 20px;
+}
+.review {
+    margin-bottom: 5px;
+}
+.desc_list p {
+    margin-top: 5px;
+}
+.watch_trailer {
+    margin-top: 20px;
+    background-color: transparent;
+    border: 3px solid white;
+    padding: 20px;
+    border-radius: 10px;
+}
+.kino_info {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 180px 340px 180px 340px;
+}
+.kino_info li{
+    list-style-type: none;
+    margin-bottom: 20px;
+}
+.list_desc_yellow li {
+    color:yellow
+}
+.list_desc_yellow li a{
+    color:yellow
+}
+.quotes h1{
+    font-size: 50px;
+    margin-top: 140px;
+    margin-left: 400px;
+}
+.quotes_block{
+    background-color: #191E2E;
+    width: 50%;
+    padding: 20px;
+    border-radius: 10px;
+    margin-left: 500px;
+    margin-top: 30px;
+    margin-bottom: 120px;
+}

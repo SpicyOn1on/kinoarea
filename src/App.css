@@ -1,0 +1,333 @@
+*{
+    color: white;
+
+}
+
+
+
+header{
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.logo {
+    display: flex;
+    font-size: 22px;
+}
+.nav li{
+    padding: 10px;
+    display: inline-block;
+    text-decoration: none;
+    list-style-type: none;
+    
+}
+
+.search{
+    background-color: white;
+    border: none;
+    width:40px;
+    height: 40px;
+    color:black;
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.login{
+    background-color:#3657CB;
+    width:120px;
+    border: none;
+    border-radius: 8px;
+    height: 40px;
+    box-shadow: 0px 0px 15px #3657CB;
+    font-family: 'Qanelas';
+}
+
+.genres{
+    margin-left: 220px;
+    margin-top: 50px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.genres h1{
+    font-size: 52px;
+}
+.polosa {
+    margin-left: 80px;
+    margin-right: 80px;
+    height: 2px;
+    width: 50px;
+    border-radius: 20px;
+    background-color: white;
+}
+.genres li{
+    list-style-type: none;
+    display: inline-block;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+
+.yellow-text {
+    color: #e4e710;
+}
+
+.newcards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 280px 280px 280px 280px;
+    gap: 20px;
+}
+.cont_center {
+    display: flex;
+    justify-content: center;
+}
+.allfilms {
+    margin-top: 40px;
+    background-color: transparent;
+    border: solid 2px white;
+    border-radius: 10px;
+    height: 50px;
+    width: 140px;
+    font-family: 'Qanelas';
+}
+.trailer_label{
+    margin-top: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 30px;
+}
+.trailer_label h1{
+    font-size: 42px;
+}
+.cont_center iframe {
+    border-radius: 14px;
+}
+.trailer_list {
+    display: grid;
+    grid-template-columns: 300px 300px 300px 300px;
+    gap: 10px;
+    overflow: hidden;
+    margin-left: 80px;
+}
+.trailer_card {
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.popular {
+    margin-top: 50px;
+    margin-right: 250px;
+    margin-left: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.popular h1{
+    font-size: 45px;
+}
+.popular li{
+    margin-right: 60px;
+    display: inline-block;
+    list-style-type: none;
+}
+.popular_cards {
+    margin-top: 30px;
+    display: grid;
+    grid-template-columns: 280px 280px 280px 280px;
+    gap: 20px;
+}
+
+.persons{
+    margin-top: 50px;
+}
+.personlabel {
+    margin-bottom: 40px;
+    display: flex;
+    justify-content: space-around;
+}
+.personlabel li{
+    display: inline-block;
+    list-style-type: none;
+    margin-left: 10px;
+    margin-right: 20px;
+}
+
+/* Доделать тени в коробке с портретами */
+
+.person_cards {
+    display: flex;
+    justify-content: center;
+    height: 318px;
+}
+.p_card{
+    margin-right: 40px;
+    margin-left: 20px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: inset 0px 0px 20px 10px rgba(0,0,0,0.6);
+}
+.p_card p {
+    position: relative;
+    bottom: 58px;
+    
+}
+.person_list {
+    background-color: #1B2133;
+    width: 360px;
+    overflow: hidden;
+    border-radius: 10px;
+}
+.person_list_unit{
+    margin-top: 15px;
+}
+.person_list hr{
+    width: 240px;
+    margin-left:50px;
+    margin-top: 8px;
+    border:solid 2px #1E2538;
+    border-radius: 5px;
+}
+.news{
+    margin-top: 30px;
+}
+.news_label{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.news_block {
+    display: grid;
+    grid-template-columns: 850px 180px;
+    gap: 20px;
+}
+.main_news_card {
+    border-radius: 5px;
+    overflow: hidden;
+    height: 560px;
+}
+.relative_text{
+    position: relative;
+    bottom: 100px;
+    margin-left: 10px;
+}
+.mini_news_card {
+    border-radius: 5px;
+    overflow: hidden;
+    height: 120px;
+    margin-bottom: 27px;
+}
+.mini_news_card h3{
+    position: relative;
+    bottom:30px;
+}
+footer {
+    background-color:#151A26;
+    padding:20px;
+}
+.premier_label {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.premiers_films {
+    margin-top: 20px;
+    display:grid;
+    grid-template-columns: 280px 280px 280px 280px;
+    gap:30px;
+}
+
+.cash_gain_label {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 70px;
+    align-items: center;
+    margin-left: 300px;
+    margin-right: 300px;
+}
+.cash_gain_label h1{
+    font-size: 58px;
+}
+.cash_gain_label hr{
+    width: 80px;
+}
+.cash_gain_label li {
+    list-style: none;
+    margin-right: 20px;
+    display: inline-block;
+}
+
+.cash_gain_best {
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 250px 250px 250px 250px 250px;
+}
+
+.small_card {
+    display: inline-block;
+}
+.small_card p{
+    position: relative;
+    bottom: 120px;
+    left:110px;
+    margin-bottom: 10px;
+}
+.email{
+    margin-top: 50px;
+    background-image: url('assets/fon.svg');
+    background-repeat: no-repeat;
+    width: 1280px;
+    height: 500px;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 20px;
+}
+.email h2{
+    margin-top: 30px;
+}
+.email h1{
+    margin-top: 40px;
+    font-size: 48px;
+}
+.email p{
+    margin-top: 30px;
+    font-size: 18px;
+}
+.email input{
+    margin-top:20px;
+    height: 50px;
+    width: 250px;
+    border: none; 
+    border-radius: 10px;
+    color: black;
+}
+.postmail{
+    margin-left: 20px;
+    width: 100px;
+    height: 50px;
+    color:black;
+    background-color: #e4e710;
+    border-radius: 10px;
+    border: none;
+    font-family: 'Qanelas';
+    font-weight: 500;
+}
+.bottom_info_nav {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+}
+.bottom_info_nav li{
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 25px;
+}
+
+.bottom_text {
+    color: gray;
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}

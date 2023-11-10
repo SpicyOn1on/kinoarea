@@ -4,13 +4,16 @@ import mulan from './assets/template_pic.svg'
 import './App.css'
 
 
-function Trailercard() {
+function Trailercard({
+  seturl, url
+}) {
+
 
 
   return (
     <>
         <div className='trailer_card'>
-            <img src={mulan} width={300} height={200}/>
+            <a onClick={() => {seturl(url)}}><img src={mulan} width={300} height={200}/></a>
         </div>
     </>
   )

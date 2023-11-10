@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 import Maincard from './maincard'
 import Trailercard from './trailercard'
@@ -11,9 +9,11 @@ import Premier from './premier'
 import TopGain from './top_gain'
 import { Navigate, useNavigate } from 'react-router-dom'
 import './assets/font/stylesheet.css'
+import MovieTrailer from './trailer/movietrailer'
 
 
 function App() {
+  
 const navigate = useNavigate()
 
 
@@ -37,9 +37,7 @@ const navigate = useNavigate()
         </div>
         <div className='headbuttns'>
           <button className='search'>0</button>
-          <button className='login' onClick={() => 
-              {navigate('/moviepage')}
-            }>Войти</button>
+          <button className='login'>Войти</button>
         </div>
       </header>
       <div className='container'>
@@ -58,14 +56,15 @@ const navigate = useNavigate()
         </div>
         <div className='cont_center'>
           <div className='newcards'>
-            <Maincard />
-            <Maincard />
-            <Maincard />
-            <Maincard />
-            <Maincard />
-            <Maincard />
-            <Maincard />
-            <Maincard />
+            <Maincard nav={'/moviepage'} move={navigate} />
+            <Maincard nav={'/moviepage'} move={navigate} />
+            <Maincard nav={'/moviepage'} move={navigate} />
+            <Maincard nav={'/moviepage'} move={navigate} />
+            <Maincard nav={'/moviepage'} move={navigate} />
+            <Maincard nav={'/moviepage'} move={navigate} />
+            <Maincard nav={'/moviepage'} move={navigate} />
+            <Maincard nav={'/moviepage'} move={navigate} />
+
           </div>
         </div>
         <div className='cont_center'>
@@ -76,26 +75,9 @@ const navigate = useNavigate()
             <h1>Новые трейлеры</h1>
             <p>Все трейлеры</p>
           </div>
-          <div className='cont_center'>
-            <iframe width="1145" height="650"
-              src="https://www.youtube.com/embed/t433PEQGErc?si=FKn_eFCe2PsYkM3k"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              allowFullScreen>
-            </iframe>
-          </div>
-          <div className='trailer_label'>
-            <h1> Джокер </h1>
-            <p>место для кнопок</p>
-          </div>
-          <div className='cont_center'>
-            <div className='trailer_list'>
-              <Trailercard />
-              <Trailercard />
 
-            </div>
-          </div>
+            <MovieTrailer/>
+
           </div>
           <div className='popular'>
           <h1>Популярные фильмы</h1>
@@ -116,8 +98,15 @@ const navigate = useNavigate()
             <Maincard />
             <Maincard />
             <Maincard />
-            </div>
+          </div>
         </div>
+        <div className='cont_center'>
+        <div className='arrows'>
+              <button className='arrow'>←</button>
+                <p>2/5</p>
+              <button className='arrow'>→</button>
+            </div>
+            </div>
         <div className='persons'>
           <div className='personlabel'>
             <h1>Популярные персоны</h1>
@@ -131,8 +120,7 @@ const navigate = useNavigate()
             <Personcard />
             <Personcard />
             <div className='person_list'>
-              {// нужно сделать отдельный файл с компонентом
-                //мне лень
+              {// мне лень делать отдельный компонент
               }
               <div className='person_list_unit'>
                   <p>Тинто Брасс</p>
@@ -183,7 +171,11 @@ const navigate = useNavigate()
               <div className='premiers'>
                 <div className='premier_label'>
                   <h1>Ожидаемые новинки</h1>
-                  <p>btns placeholder</p>
+                  <div className='arrows'>
+                   <button className='arrow'>←</button>
+                    <p>2/5</p>
+                    <button className='arrow'>→</button>
+                  </div>
                 </div>
                 <div className='cont_center'>
                 <div className='premiers_films'>
@@ -240,6 +232,7 @@ const navigate = useNavigate()
                 </div>
                 <p className='bottom_text'> 2023 prav net</p>
               </div>
+
             </footer>
         </div>
       
